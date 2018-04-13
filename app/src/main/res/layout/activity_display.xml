@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.princ.inclass03.DisplayActivity">
+
+
+    <TextView
+        android:id="@+id/tname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tmood"
+        android:layout_alignStart="@+id/tmood"
+        android:layout_toLeftOf="@+id/editname"
+        android:layout_toStartOf="@+id/editname"
+        android:layout_below="@+id/dsi"
+        android:layout_marginTop="23dp"
+        android:text=""
+        android:maxLines="2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/temail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tname"
+        android:layout_alignStart="@+id/tname"
+        android:layout_toLeftOf="@+id/editemail"
+        android:layout_toStartOf="@+id/editemail"
+        android:layout_below="@+id/tname"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text=""
+        android:maxLines="2"/>
+
+    <TextView
+        android:id="@+id/tdep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Demail"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/Ddep"
+        android:layout_toRightOf="@+id/Ddep"
+        android:text=""
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tmood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Dmood"
+        android:layout_alignBottom="@+id/Dmood"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/Dmood"
+        android:layout_toRightOf="@+id/Dmood"
+        android:textSize="20sp"
+        android:text="" />
+
+    <ImageButton
+        android:id="@+id/editname"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tname"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/editemail"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignLeft="@+id/editname"
+        android:layout_alignStart="@+id/editname"
+        android:layout_alignTop="@+id/temail"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/editdep"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignLeft="@+id/editemail"
+        android:layout_alignStart="@+id/editemail"
+        android:layout_alignTop="@+id/tdep"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/editmood"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignLeft="@+id/editdep"
+        android:layout_alignStart="@+id/editdep"
+        android:layout_below="@+id/editdep"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/Dname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tname"
+        android:layout_alignBottom="@+id/tname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/Demail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/temail"
+        android:layout_alignBottom="@+id/temail"
+        android:layout_alignEnd="@+id/Dname"
+        android:layout_alignRight="@+id/Dname"
+        android:textSize="20sp"
+        android:text="Email:" />
+
+    <TextView
+        android:id="@+id/Ddep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tdep"
+        android:layout_alignBottom="@+id/tdep"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:text="Department:" />
+
+    <TextView
+        android:id="@+id/Dmood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editmood"
+        android:textSize="20sp"
+        android:text="Mood:" />
+
+    <TextView
+        android:id="@+id/dsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tname"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tname"
+        android:layout_marginTop="13dp"
+        android:text="Student Information"
+        android:textSize="20sp" />
+
+</RelativeLayout>
